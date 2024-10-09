@@ -1,0 +1,149 @@
+:root {
+  --color1: #2c363f;
+  --color2: #e75a7c;
+  --color3: #f2f5ea;
+  --color4: #627b94;
+}
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  background-color: var(--color2);
+  width: 100%;
+  height: 8vh;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#navbar ul li {
+  list-style: none;
+  display: inline-block;
+}
+#navbar ul li a {
+  text-decoration: none;
+  font-size: 30px;
+  color: var(--color3);
+  display: block;
+  width: 120px;
+  text-align: center;
+  font-weight: 550;
+}
+#navbar ul li:last-child {
+  margin-right: 25px;
+}
+
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color1);
+  color: var(--color3);
+  text-align: center;
+  position: relative;
+}
+.text {
+  font-size: 22px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  line-height: 1.35;
+  font-weight: bold;
+  font-size: 35px;
+  /*why do font weight doesnt affects h1*/
+}
+
+/*do projects section later ; after making git repository*/
+#projects {
+  width: 100%;
+  height: 150vh;
+  border: 2px solid red;
+}
+#projects #project-grid {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 600px 600px;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+  row-gap: 10px;
+}
+#project-grid a {
+  border: 2px solid green;
+}
+#contact {
+  width: 100%;
+  height: 92vh;
+  background-color: var(--color1);
+  position: relative;
+  color: var(--color3);
+}
+
+#contact #center {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translateY(-50%);
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+#contact #center ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  justify-content: center;
+  column-gap: 35px;
+  padding: 45px;
+}
+#contact #center ul li i {
+  margin-right: 10px;
+}
+#contact #center ul li {
+  display: flex;
+  align-items: center;
+  cursor: default;
+  transition: transform 0.3s ease;
+}
+
+#contact #center ul li:hover {
+  transform: translateY(15px);
+  /*how do i make them hover animation downward*/
+}
+hr {
+  border: 1px solid var(--color2);
+  width: 100%;
+}
+
+#contact footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  height: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 18px;
+  border-top: 1px solid var(--color2);
+}
+
+/* alter padding in media query of footer in less tha 700px */
+/* add gap bt icon and text */
+
+@media (min-width: 700px) {
+  section {
+    display: block;
+  }
+}

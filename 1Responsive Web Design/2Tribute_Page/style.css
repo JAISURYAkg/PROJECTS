@@ -1,0 +1,54 @@
+html {
+  font-family: sans-serif;
+}
+body {
+  background-color: #ffffff;
+  padding: 25px 8px;
+}
+main {
+  padding: 15px 7px 10px 7px;
+  background-color: #eeeeee;
+}
+header {
+  text-align: center;
+}
+figure {
+  margin-top: -5px;
+  background-color: #ffffff;
+  padding: 40px 110px 35px 110px;
+}
+#image {
+  display: block;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#tribute-info h2 {
+  text-align: center;
+}
+#year {
+  font-size: 18px;
+  font-weight: bold;
+}
+#achievment {
+  font-size: 18;
+}
+#lolo {
+  padding: 45px 10px 45px 10px;
+  text-align: center;
+  font-size: 15px;
+}
+#know_More {
+  text-align: center;
+  font-weight: bold;
+}
+#tribute-info > ul li p {
+  display: inline;
+}
+li {
+  padding-top: 25px;
+  padding-bottom: 5px;
+}
+#achievment::before {
+  content: ": ";
+}

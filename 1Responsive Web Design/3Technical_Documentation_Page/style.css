@@ -1,0 +1,77 @@
+* {
+  font-family: Open Sans, Arial, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 10px;
+}
+body {
+  font-size: 19px;
+  margin: 0;
+  padding: 0;
+}
+body a {
+  text-decoration: none;
+}
+body nav ul li {
+  list-style: none;
+  padding: 9px 9px 14px 9px;
+  border-bottom: 1px solid black;
+}
+body nav ul li a {
+  color: #4d4e53;
+}
+body nav ul li a:hover {
+  margin-left: 3px;
+}
+main {
+  display: flex;
+  position: relative;
+  color: #4d4e53;
+}
+main .main-s1 {
+  position: fixed;
+  background-color: #fff;
+  width: min(40%, 320px);
+  height: 100%;
+  border-right: 1.5px solid black;
+}
+main .main-s1 h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 35px;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+main .main-s2 {
+  background-color: #fff;
+  width: 100%;
+  margin-left: min(42%, 340px);
+}
+
+main .main-s2 .main-section h2 {
+  font-size: 23px;
+}
+
+.main-s2 .main-section p {
+  padding-left: 15px;
+}
+.main-s2 .main-section ul {
+  padding-left: 45px;
+}
+code {
+  display: inline-block;
+  background-color: #f7f7f7;
+  padding: 5px 8px;
+  margin-left: 35px;
+  max-width: fit-content;
+}
+
+@media (max-width: 680px) {
+  main .main-s2 {
+    min-width: 410px;
+  }
+  main .main-s1 {
+    min-width: 270px;
+  }
+}

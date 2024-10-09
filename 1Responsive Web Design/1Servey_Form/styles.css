@@ -1,0 +1,86 @@
+* {
+  color: #fff;
+  font-size: 18px;
+}
+body {
+  background-repeat: no_repeat;
+  background: linear-gradient(
+      rgba(129, 93, 182, 0.5),
+      /* Pale color at the top */ rgba(189, 143, 205, 0.5)
+        /* Pale color at the bottom */
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg); /* Step 2: Add the background image */
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+input {
+  font-size: 0.9rem;
+  color: black;
+}
+#cento {
+  background: rgba(37, 37, 69, 0.8);
+  padding: 50px;
+  max-width: 550px;
+  min-width: 300px;
+  margin: auto;
+  height: fit-content;
+}
+h1,
+#description {
+  text-align: center;
+  margin: 1rem auto;
+}
+h1 {
+  font-size: 2rem;
+}
+#description {
+  font-size: 1.125rem;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+}
+
+select option {
+  color: black;
+}
+select {
+  color: grey;
+}
+select option[disabled] {
+  color: #999; /* Grey out the disabled option */
+}
+
+[id*="label"] input,
+#dropdown,
+#features,
+textarea,
+input[type="submit"] {
+  width: 85%;
+  border-radius: 4px;
+  padding: 5px 12px;
+  border: none;
+  outline: none;
+}
+input[type="submit"] {
+  background-color: #37af65;
+  font-size: 1.2rem;
+  color: #fff;
+  margin-top: 10px;
+}
+textarea {
+  resize: none;
+}
+[id*="label"] input:focus,
+#dropdown:focus,
+#features:focus,
+textarea:focus {
+  outline: 2px solid #4560b0; /* Blue outline when the element is focused */
+}
